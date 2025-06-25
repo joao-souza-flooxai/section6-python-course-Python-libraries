@@ -17,6 +17,7 @@ valor_parcelas_mensal = ((1 * (10**6)) / 5)/12
 delta = relativedelta(data_final, data_inicio)
 meses_totais = delta.years * 12 + delta.months + 1
 data_parcela = data_inicio
+
 for i in range(meses_totais):
     print(f"Parcela {i+1:02d} - Vencimento: {data_parcela.strftime('%d/%m/%Y')} - Valor: R$ {valor_parcelas_mensal:,.2f}")
     data_parcela += relativedelta(months=1)
