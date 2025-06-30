@@ -17,7 +17,7 @@ reader =PdfReader(IA)
 # print(len(reader.pages))
 # for page in reader.pages :
 
-page0 = reader. pages[0]
+page0 = reader.pages[0]
 
 print(page0.extract_text())
 
